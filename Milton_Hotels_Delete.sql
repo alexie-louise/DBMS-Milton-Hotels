@@ -1,4 +1,4 @@
--- Delete values from each tables
+-- Delete values from each table
 -- Please note update was performed before deletion
 
 -- 1. Table Room
