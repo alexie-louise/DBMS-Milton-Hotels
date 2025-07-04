@@ -1,8 +1,8 @@
 -- Update values from each table
 
+-- 1. Table GuestAddress
 -- Storyline: Jane Doe moved to a different country and changed her identity. She was a part of a money heist, and the presidential
 -- suite was purchased with a stolen credit card. She contacted Milton Hotels to update her personal information in the system.
--- 1. Table GuestAddress
 update MiltonHotels.GuestAddress
 set
 street = '222 New Address Rd',
