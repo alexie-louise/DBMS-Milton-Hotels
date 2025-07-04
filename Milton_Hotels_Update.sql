@@ -1,8 +1,7 @@
 -- Update values from each table
 
-/* Storyline: Jane Doe moved to a different country and changed her identity. She was a part of a money heist, and the presidential
-suite was purchased with a stolen credit card. She contacted Milton Hotels to update her personal information in the system.
-*/
+-- Storyline: Jane Doe moved to a different country and changed her identity. She was a part of a money heist, and the presidential
+-- suite was purchased with a stolen credit card. She contacted Milton Hotels to update her personal information in the system.
 -- 1. Table GuestAddress
 update MiltonHotels.GuestAddress
 set
@@ -41,8 +40,8 @@ limit 1
 )
 where rbid = 4;
 
--- Guinevere Beck changed the card on file
 -- 5. Table Transactions
+-- Guinevere Beck changed the card on file
 update MiltonHotels.Transactions
 set 
 name_on_card = 'Guinevere Beck',
@@ -52,10 +51,9 @@ cvv = 1234,
 card_issuer = 'American Express'
 where tid = 4;
 
-
-/* Charlie noticed he was mischarged at the restaurant. He paid $51, but his meal was $15. 
-Update his bill */
 -- 6. Table Bill
+-- Charlie noticed he was mischarged at the restaurant. He paid $51, but his meal was $15. 
+-- Update his bill 
 update MiltonHotels.Bill
 set
 restaurant_charges = 15.00
@@ -63,7 +61,8 @@ where invoiceno = 2;
 
 
 -- 7. Table Room
--- At the NY Location, remodeling was done square ft available increased. All standard rooms were updated to deluxe rooms.
+--At the NY location, renovations were completed, and additional square footage was made available.
+--All standard rooms were upgraded to deluxe rooms.
 update MiltonHotels.Room
 set rtype = 'deluxe'
 where hlid = 1 and rtype = 'standard';
